@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🎨 Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🏠 Homepage Section -->
+    <header id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm a Web Developer & AI Enthusiast. Let's build something amazing!</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <!-- 👤 About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="profile.jpg" alt="My Photo" class="profile-pic">
+            <div class="about-text">
+                <p>Hi! I'm [Your Name], a passionate web developer and AI enthusiast. I specialize in creating modern, responsive websites and integrating AI-powered features.</p>
+                <p>With a background in biochemistry and a deep love for technology, I enjoy building projects that combine science and AI-driven automation.</p>
+                <a href="resume.pdf" download class="btn">Download My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔎 Search Bar -->
+    <input type="text" id="search-bar" placeholder="Search projects..." onkeyup="searchProjects()">
+
+    <!-- 📂 Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="ai">AI Projects</button>
+            <button class="filter-btn" data-category="web">Web Development</button>
+            <button class="filter-btn" data-category="automation">Automation</button>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="project-container">
+            <div class="project" data-category="ai">
+                <img src="ai-website-preview.jpg" alt="AI Website">
+                <h3>AI-Powered Website</h3>
+                <p>An AI chatbot & image generator website.</p>
+                <a href="https://ovalentine170.github.io/my-website/" class="btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="project" data-category="web">
+                <img src="portfolio-preview.jpg" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+                <p>A modern portfolio showcasing my projects.</p>
+                <a href="https://your-portfolio-link.com" class="btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="project" data-category="automation">
+                <img src="automation-tool.jpg" alt="Automation Tool">
+                <h3>Automation Tool</h3>
+                <p>A script that automates daily tasks efficiently.</p>
+                <a href="https://your-automation-tool.com" class="btn" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Got a project in mind? Let's talk!</p>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- 🌐 Social Links -->
+        <div class="social-links">
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- 🔁 Page Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 💬 Testimonials Section -->
+    <section id="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+            <p>"[Your Website] is amazing! I learned so much and had a great experience."</p>
+            <p>- Person 1</p>
+        </div>
+        <div class="testimonial">
+            <p>"The interface is user-friendly, and I love the design!"</p>
+            <p>- Person 2</p>
+        </div>
+    </section>
+
+    <!-- 🔗 Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- 🔝 Back to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">↑</button>
+
+</body>
+
+</html>
+
